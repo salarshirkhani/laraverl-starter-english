@@ -15,7 +15,7 @@
     <form class="login100-form validate-form" action="{{ route('login') }}" method="POST">
         @csrf
         <span class="login100-form-title">
-            ورود به حساب
+            Login
 					</span>
 
         <div class="wrap-input100 validate-input" data-validate="email is Requierd!">
@@ -38,7 +38,7 @@
 
         <div class="container-login100-form-btn">
             <button class="login100-form-btn">
-                ورود
+                Login
             </button>
         </div>
 
@@ -55,7 +55,7 @@
             </a>
             <br>
             <a class="txt2" href="javascript:history.back()">
-                {{ __('بازگشت') }}
+                {{ __('Back') }}
                 <i class="fa fa-long-arrow-left m-l-5" aria-hidden="true"></i>
             </a>
         </div>

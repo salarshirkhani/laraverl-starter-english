@@ -1,7 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
+use App\Providers\RouteServiceProvider;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use Illuminate\Auth\Access\Gate;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +34,15 @@ Route::prefix('dashboard')
             ->name('admin.')
             ->middleware(['user_type:admin'])
             ->namespace('Admin')
+            ->group(function() {
+                Route::get('',  'IndexController@get')->name('index');
+
+            });
+           
+         Route::prefix('customer')
+            ->name('customer.')
+            ->middleware(['user_type:customer'])
+            ->namespace('Customer')
             ->group(function() {
                 Route::get('',  'IndexController@get')->name('index');
 
