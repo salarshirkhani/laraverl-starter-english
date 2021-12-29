@@ -14,7 +14,6 @@
     <!-- Styles -->
     <link href="{{ asset('assets/fonts/shabnam.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/auth/css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/auth/css/main.rtl.css') }}" rel="stylesheet">
 </head>
 <body>
 

@@ -25,6 +25,8 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('search-database', function (User $user) {
+            return $user->type == 'customer';
+        });
     }
 }
