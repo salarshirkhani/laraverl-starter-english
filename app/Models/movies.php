@@ -12,5 +12,7 @@ class movies extends Model
     protected $fillable=['title','description','slug','year', 'status' , 'link', 
     'trailer', 'duaration', 'downloadable', 'featured', 'image', 'stars', 'iframe'];
 
-    
+    public function genres() {
+        return $this->hasMany('App\Models\movie_genres');
+    }
 }

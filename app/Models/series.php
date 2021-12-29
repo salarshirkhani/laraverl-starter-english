@@ -15,5 +15,9 @@ class series extends Model
     public function episode() {
         return $this->hasMany('App\Models\episode');
     }
-    
+
+    public function genres() {
+        return $this->hasMany('App\Models\serie_genres');
+    }
+
 }
