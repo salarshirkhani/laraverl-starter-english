@@ -15,6 +15,17 @@ class CreateSeriesTable extends Migration
     {
         Schema::create('series', function (Blueprint $table) {
             $table->id();
+            $table->string('title', 191);
+            $table->string('slug', 191);
+            $table->string('year', 191);
+            $table->string('link', 191);
+            $table->string('trailer', 191);
+            $table->boolean('featured')->nullable();
+            $table->text('description')->nullable();
+            $table->string('image', 191);
+            $table->string('stars', 191);
+            $table->text('iframe')->nullable();
+            $table->string('status', 191)->nullable();
             $table->timestamps();
         });
     }
