@@ -18,8 +18,8 @@
             ورود به حساب
 					</span>
 
-        <div class="wrap-input100 validate-input" data-validate="ایمیل اجباری است!">
-            <input type="email" name="email" maxlength="100" class=" input100" placeholder="ایمیل" required=""
+        <div class="wrap-input100 validate-input" data-validate="email is Requierd!">
+            <input type="email" name="email" maxlength="100" class=" input100" placeholder="email" required=""
                    id="id_email" value="{{ old('email') ?? '' }}">
             <span class="focus-input100"></span>
             <span class="symbol-input100">
@@ -28,8 +28,8 @@
         </div>
 
 
-        <div class="wrap-input100 validate-input" data-validate="رمزعبور اجباری است!">
-            <input type="password" name="password" class=" input100" placeholder="کلمه‌عبور" id="id_password">
+        <div class="wrap-input100 validate-input" data-validate="Password is Requierd!">
+            <input type="password" name="password" class=" input100" placeholder="password" id="id_password">
             <span class="focus-input100"></span>
             <span class="symbol-input100">
 			    <i class="fa fa-lock" aria-hidden="true"></i>
@@ -45,12 +45,12 @@
 
         <div class="text-center p-t-136">
             <a class="txt2" href="{{ route('register') }}">
-                {{ __('میخواهید ثبت‌نام کنید؟') }}
+                {{ __('You dont have in Account?') }}
                 <i class="fa fa-long-arrow-left m-l-5" aria-hidden="true"></i>
             </a>
             <br>
             <a class="txt2" href="{{ route('password.request') }}">
-                {{ __('رمز خود را فراموش کرده‌اید؟') }}
+                {{ __('Forget your Password?') }}
                 <i class="fa fa-long-arrow-left m-l-5" aria-hidden="true"></i>
             </a>
             <br>
